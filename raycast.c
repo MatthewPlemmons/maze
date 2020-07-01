@@ -105,6 +105,7 @@ void ray_cast(int map[][MAP_WIDTH], SDL_Instance *inst, Player *p, int x)
 		draw_end = inst->height - 1;
 
 	/* Determine wall color */
+	/*percent_height = (line_height % inst->height) * 100)*/
 	SDL_SetRenderDrawColor(inst->renderer, 0, 255, 0, 255);
 	if (ray->side == 1)
 		SDL_SetRenderDrawColor(inst->renderer, 0, 150, 0, 255);
